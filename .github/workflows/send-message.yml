@@ -22,3 +22,4 @@ jobs:
           java Bot
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_MSG: ${{ vars.SLACK_WEBHOOK_MSG }} # 추가 vars도 볼 수는 없음 / secret보다 상대적으로 너그러움
