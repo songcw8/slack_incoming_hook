@@ -18,7 +18,7 @@ public class Bot {
             .uri(URI.create(webhookUrl))
             .header("Content-Type", "application/json")
             // .POST(HttpRequest.BodyPublishers.ofString("{\"text\":\"너 누기야\"}"))
-            .POST(HttpRequest.BodyPublishers.ofString("{\"text\":\" + message \"}"))
+            .POST(HttpRequest.BodyPublishers.ofString("{\"text\":\" + " + message + "\"}"))
             .build();
         
         try {
